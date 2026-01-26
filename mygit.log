@@ -1,0 +1,29 @@
+commit b453f8b8adf9b2a85acd7873f9ace48aaa60f133
+Author: Freddie Topping <freddietopping06@gmail.com>
+Date:   Mon Jan 19 15:31:14 2026 +0000
+
+    main.cpp added to repository on develop branch
+
+commit 7f3ae3e0af36bd21b9d2228c3e2b5f168ef87af6
+Author: Freddie Topping <freddietopping06@gmail.com>
+Date:   Mon Jan 19 15:27:45 2026 +0000
+
+    added .DS_Store command to .gitignore file for mac users
+
+commit 590f4e377fbd5093ea5e86ec80dc2de3a3407229
+Author: Freddie Topping <freddietopping06@gmail.com>
+Date:   Mon Jan 19 15:25:34 2026 +0000
+
+    added README.md and notes.md files
+
+commit 01a24dd895ffcdbbe70604e82d162ce158c53f9c
+Author: Freddie Topping <freddietopping06@gmail.com>
+Date:   Mon Jan 19 15:24:21 2026 +0000
+
+    added txt files to ignored files
+
+commit 66f4e8bc1528b749c8043ca9d4bed553133fb1db
+Author: Freddie Topping <freddietopping06@gmail.com>
+Date:   Mon Jan 19 15:11:35 2026 +0000
+
+    moved file to respository
