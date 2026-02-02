@@ -1,6 +1,8 @@
 #include <iostream>
+#include "system.h"
 
 int main(){
-	return 0
+	System mySystem; //instantiates a System object mySystem
+	return 0;
 }
 
