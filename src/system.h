@@ -7,7 +7,7 @@
 
 class System {
 	public:
-		System();
+		System(int particleNumber, double sideLength, double timeStep, double noiseStrength);
 		int particleNumber;
 		double noiseStrength;
 //		Box simulationBox;
