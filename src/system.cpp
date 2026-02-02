@@ -9,6 +9,8 @@ void System::updateRule(){
 System::System(int particleNumber,double sideLength, double timeStep,double noiseStrength){
 	// whatever we want to do as we instantiate the system
 	this->particleNumber = particleNumber;
+	this->sideLength = sideLength;
+	this->timeStep = timeStep;
 	this->noiseStrength = noiseStrength;
 	std::cout <<  "I am constructing the System!" << std::endl;
 }
