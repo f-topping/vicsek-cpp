@@ -13,6 +13,7 @@ System::System(int particleNumber,double sideLength, double timeStep,double nois
 	this->timeStep = timeStep;
 	this->noiseStrength = noiseStrength;
 	std::cout <<  "I am constructing the System!" << std::endl;
+	this->simulationBox = Box(sideLength, sideLength, 0, 0);
 }
 
 

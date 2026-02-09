@@ -2,7 +2,7 @@
 #define SYSTEM_H
 
 #include <vector>
-//#include "box.h"
+#include "box.h"
 //#include "particle.h"
 
 class System {
@@ -13,7 +13,7 @@ class System {
 		double timeStep;
 		double sideLength;
 
-//		Box simulationBox;
+		Box simulationBox;
 //		std::vector<Particle> particles;
 
 		void updateRule();
