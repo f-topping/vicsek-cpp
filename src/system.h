@@ -3,6 +3,7 @@
 
 #include <random>
 #include <vector>
+#include <string>
 #include "box.h"
 #include "particle.h"
 
@@ -24,6 +25,9 @@ class System {
 		std::uniform_real_distribution<double> uniformDist;
 		double uniform(double min, double max);
 		
+		void randomStart();
+
+		void saveConfig(const std::string &filename);		
 };
 
 #endif

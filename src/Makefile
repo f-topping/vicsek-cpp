@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -O2 -Wall -std=c++17
+CFLAGS = -O2 -Wall -std=c++11
 SRC = main.cpp system.cpp system.h box.cpp box.h particle.cpp particle.h
 EXEC = program
 OBJ = $(SRC:.cpp=.o) #converts .cpp to .o
