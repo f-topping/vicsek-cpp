@@ -14,4 +14,4 @@ $(EXEC): $(OBJ)
 
 clean:
 	rm -f $(EXEC)
-	rm -f *.o
+	find . -name "*.o" -type f -delete
