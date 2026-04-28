@@ -15,3 +15,4 @@ $(EXEC): $(OBJ)
 clean:
 	rm -f $(EXEC)
 	find . -name "*.o" -type f -delete
+	find . -name "frame*" -type f -delete

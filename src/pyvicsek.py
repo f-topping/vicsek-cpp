@@ -2,7 +2,9 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-
+import glob
+import natsort
+from matplotlib.animation import FuncAnimation, PillowWriter
 
 def read_config(filename, skip=2):
 	"""Reading an vicsek configuration from a file handle"""
@@ -24,12 +26,34 @@ def read_config(filename, skip=2):
 
 def plot(conf,ax):
 	qv = ax.quiver(conf["x"], conf["y"], conf["vx"], conf["vy"], conf["theta"], scale=1, scale_units = "xy", cmap = "hsv")
-	plt.axis("equal")
 	return qv
 
+#files stored in folder
+files = natsort.natsorted(glob.glob("frame*"))
+
+#plot
 fig, ax = plt.subplots()
-plot(read_config("init.conf"), ax)
+
+qv = plot(read_config(files[0]),ax)
+#plot(read_config("init.conf"), ax) # for image file
 #plt.savefig("vicsek_img.png")
-plt.show
+
+plt.axis("equal")
+plt.axis("off")
+
+def animate(i):
+#	print(i)
+	conf = read_config(files[i])
+	pos = np.array(list(zip(conf["x"], conf["y"])))
+#	print(pos)
+	qv.set_offsets(pos)
+	qv.set_UVC(conf["vx"], conf["vy"], conf["theta"])
+	return qv
+
+anim = FuncAnimation(fig, animate, range(len(files)))
+anim.save("vicsek_gif.gif", writer=PillowWriter(fps=20))
+
+plt.show()
+
 
 # %%
